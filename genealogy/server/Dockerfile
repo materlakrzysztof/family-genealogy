@@ -12,7 +12,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
     #clang zlib1g-dev
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["server/server.csproj", "server/"]
+COPY ["./server.csproj", "server/"]
 RUN dotnet restore "./server/server.csproj"
 COPY . .
 WORKDIR "/src/server"
