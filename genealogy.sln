@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server", "server\server.csproj", "{A7ACFA7B-05BC-4BD8-9C71-A859850523EE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genealogy.Domain", "Genealogy.Domain\Genealogy.Domain.csproj", "{3E503C0C-AF89-48C2-AFBF-05B55BBD69EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genealogy.Infrastructure", "Genealogy.Infrastructure\Genealogy.Infrastructure.csproj", "{A6C59639-3B2B-4BAB-8AEA-1413D8DEAA96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genealogy.Api", "Genealogy.Api\Genealogy.Api.csproj", "{E6E19168-0F86-4EEE-965A-BFFE66EEB2B5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{68CDE25C-DE08-407D-A8B7-AE1B685B8EE4}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{8110FBF0-4728-4D06-9C3B-E194774B4CAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +20,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A7ACFA7B-05BC-4BD8-9C71-A859850523EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7ACFA7B-05BC-4BD8-9C71-A859850523EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7ACFA7B-05BC-4BD8-9C71-A859850523EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7ACFA7B-05BC-4BD8-9C71-A859850523EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3E503C0C-AF89-48C2-AFBF-05B55BBD69EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3E503C0C-AF89-48C2-AFBF-05B55BBD69EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E503C0C-AF89-48C2-AFBF-05B55BBD69EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,10 +28,10 @@ Global
 		{A6C59639-3B2B-4BAB-8AEA-1413D8DEAA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6C59639-3B2B-4BAB-8AEA-1413D8DEAA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6C59639-3B2B-4BAB-8AEA-1413D8DEAA96}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E6E19168-0F86-4EEE-965A-BFFE66EEB2B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6E19168-0F86-4EEE-965A-BFFE66EEB2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E6E19168-0F86-4EEE-965A-BFFE66EEB2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E6E19168-0F86-4EEE-965A-BFFE66EEB2B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8110FBF0-4728-4D06-9C3B-E194774B4CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8110FBF0-4728-4D06-9C3B-E194774B4CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8110FBF0-4728-4D06-9C3B-E194774B4CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8110FBF0-4728-4D06-9C3B-E194774B4CAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

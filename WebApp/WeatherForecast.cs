@@ -1,4 +1,4 @@
-namespace Genealogy.Api
+namespace WebApp
 {
     public class WeatherForecast
     {
