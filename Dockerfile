@@ -1,4 +1,9 @@
-#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+FROM node:22-alpine AS node-build
+WORKDIR /angular
+COPY ./genealogy .
+RUN npm ci
+RUN npm run build
+RUN ls
 
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 USER $APP_UID
@@ -13,6 +18,7 @@ COPY ["WebApp/WebApp.csproj", "WebApp/"]
 RUN ls
 RUN dotnet restore "./WebApp/WebApp.csproj"
 COPY . .
+COPY --from=node-build /angular/dist/genealogy/browser ./WebApp/wwwroot
 WORKDIR "/src/WebApp"
 RUN dotnet build "./WebApp.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
