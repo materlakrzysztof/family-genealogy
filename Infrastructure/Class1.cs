@@ -1,4 +1,4 @@
-﻿namespace Genealogy.Infrastructure
+﻿namespace Infrastructure
 {
     public class Class1
     {
